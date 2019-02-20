@@ -1,0 +1,25 @@
+<idea-plugin>
+    <id>de.halirutan.markdownextender</id>
+    <name>markdownextender</name>
+    <vendor email="me@yourcompany.com" url="http://www.halirutan.de">Me</vendor>
+    <depends>org.intellij.plugins.markdown</depends>
+    <description><![CDATA[This is a description of minimal length of 40]]></description>
+
+    <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+         on how to target different products -->
+    <!-- uncomment to enable plugin in all products
+    <depends>com.intellij.modules.lang</depends>
+    -->
+
+    <extensions defaultExtensionNs="com.intellij">
+        <!-- Add your extensions here -->
+    </extensions>
+
+    <extensions defaultExtensionNs="org.intellij.markdown">
+        <fenceLanguageProvider implementation="de.halirutan.markdownextender.MyLanguageFenceProvider"/>
+    </extensions>
+
+    <actions>
+        <!-- Add your actions here -->
+    </actions>
+</idea-plugin>
